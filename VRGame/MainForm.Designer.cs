@@ -43,7 +43,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(216, 122);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(216, 110);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(348, 388);
             this.button1.TabIndex = 0;
@@ -52,7 +54,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(596, 122);
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(596, 110);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(348, 388);
             this.button2.TabIndex = 1;
@@ -61,7 +65,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(976, 122);
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(976, 110);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(348, 388);
             this.button3.TabIndex = 2;
@@ -70,7 +76,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1356, 122);
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(1356, 110);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(348, 388);
             this.button4.TabIndex = 3;
@@ -79,7 +87,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(216, 559);
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(216, 509);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(348, 388);
             this.button5.TabIndex = 4;
@@ -88,7 +98,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(596, 559);
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(596, 509);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(348, 388);
             this.button6.TabIndex = 5;
@@ -97,7 +109,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(976, 559);
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(976, 509);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(348, 388);
             this.button7.TabIndex = 6;
@@ -106,7 +120,9 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(1356, 559);
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(1356, 509);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(348, 388);
             this.button8.TabIndex = 7;
@@ -118,7 +134,7 @@
             this.left.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.left.FlatAppearance.BorderSize = 0;
             this.left.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.left.Location = new System.Drawing.Point(782, 970);
+            this.left.Location = new System.Drawing.Point(782, 900);
             this.left.Name = "left";
             this.left.Size = new System.Drawing.Size(92, 124);
             this.left.TabIndex = 8;
@@ -127,7 +143,9 @@
             // 
             // right
             // 
-            this.right.Location = new System.Drawing.Point(1051, 970);
+            this.right.FlatAppearance.BorderSize = 0;
+            this.right.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.right.Location = new System.Drawing.Point(1051, 900);
             this.right.Name = "right";
             this.right.Size = new System.Drawing.Size(92, 124);
             this.right.TabIndex = 9;
@@ -136,6 +154,8 @@
             // 
             // kill
             // 
+            this.kill.FlatAppearance.BorderSize = 0;
+            this.kill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kill.Location = new System.Drawing.Point(657, 481);
             this.kill.Name = "kill";
             this.kill.Size = new System.Drawing.Size(604, 182);
