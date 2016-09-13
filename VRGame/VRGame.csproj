@@ -81,6 +81,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="config\conf.ini" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -103,6 +104,18 @@
     <Folder Include="bin\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="config\1.png" />
+    <Content Include="config\2.png" />
+    <Content Include="config\3.png" />
+    <Content Include="config\4.png" />
+    <Content Include="config\5.png" />
+    <Content Include="config\6.png" />
+    <Content Include="config\img\background.png" />
+    <Content Include="config\img\kill.png" />
+    <Content Include="config\img\left_disable.png" />
+    <Content Include="config\img\left_enable.png" />
+    <Content Include="config\img\right_disable.png" />
+    <Content Include="config\img\right_enable.png" />
     <Content Include="PerfCenterCpl.ico" />
   </ItemGroup>
   <ItemGroup>

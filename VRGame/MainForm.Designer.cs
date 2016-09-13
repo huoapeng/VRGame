@@ -154,12 +154,14 @@
             // 
             // kill
             // 
+            this.kill.Cursor = System.Windows.Forms.Cursors.Default;
             this.kill.FlatAppearance.BorderSize = 0;
             this.kill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.kill.Location = new System.Drawing.Point(657, 481);
+            this.kill.Location = new System.Drawing.Point(657, 430);
             this.kill.Name = "kill";
             this.kill.Size = new System.Drawing.Size(604, 182);
             this.kill.TabIndex = 10;
+            this.kill.TabStop = false;
             this.kill.UseVisualStyleBackColor = true;
             this.kill.Click += new System.EventHandler(this.kill_Click);
             // 
