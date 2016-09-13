@@ -6,3 +6,6 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WindowsFormsApplica
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\VRGame.exe
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\VRGame.pdb
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.MainForm.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\VRGame\VRGame\bin\Release\VRGame.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\VRGame\VRGame\obj\Release\VRGame.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\VRGame\VRGame\obj\Release\VRGame.pdb
