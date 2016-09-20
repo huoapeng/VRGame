@@ -11,7 +11,8 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
-namespace WindowsFormsApplication1
+
+namespace VRGame
 {
     public partial class MainForm : Form
     {
@@ -20,6 +21,7 @@ namespace WindowsFormsApplication1
         public int lastPage;
         public string path = Directory.GetCurrentDirectory();
         public Dictionary<int, Game> source = new Dictionary<int, Game>();
+        public Log log;
 
         public MainForm()
         {
@@ -91,12 +93,14 @@ namespace WindowsFormsApplication1
             load(currentPage);
             currentProcess.Kill();
             currentProcess.Close();
+            recordFinish(DateTime.Now);
         }
 
         private void excute(int buttonNo)
         {
-            currentProcess = Process.Start(source[currentPage * 8 + buttonNo].excutePath);
+            currentProcess = Process.Start(source[currentPage * 8 + buttonNo].ExcutePath);
             loadGaming();
+            recordStart(buttonNo, DateTime.Now);
         }
 
         private void load(int page)
@@ -108,7 +112,7 @@ namespace WindowsFormsApplication1
                 {
                     int key = page * 8 + int.Parse(Regex.Match(c.Name, @"\d+").Value);
                     if (source.ContainsKey(key))
-                        c.BackgroundImage = Image.FromFile(Path.Combine(path, "config", source[key].imgName));
+                        c.BackgroundImage = Image.FromFile(Path.Combine(path, "config", source[key].ImgName));
                     else
                         c.Visible = false;
                 }
@@ -151,6 +155,30 @@ namespace WindowsFormsApplication1
             }
 
             return i / 8;
+        }
+
+        private void recordStart(int gameid, DateTime time)
+        {
+            log = new Log(gameid, time);
+        }
+
+        private void recordFinish(DateTime time)
+        {
+            log.finish(time);
+
+            string filePath = Path.Combine(path, "log", DateTime.Now.Date.ToString("yyyy-MM-dd") + ".csv");
+            if (!File.Exists(filePath))
+            {
+                using (StreamWriter sw = File.CreateText(filePath))
+                {
+                    sw.WriteLine(Log.titleSerialize());
+                }
+            }
+            
+            using (StreamWriter sw = File.AppendText(filePath))
+            {
+                sw.WriteLine(log.serialize());
+            }
         }
 
     }

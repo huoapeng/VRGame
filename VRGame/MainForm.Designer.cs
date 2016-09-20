@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace VRGame
 {
     partial class MainForm
     {
@@ -167,7 +167,7 @@
             // 
             // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(1920, 1092);
+            this.ClientSize = new System.Drawing.Size(1920, 1062);
             this.Controls.Add(this.kill);
             this.Controls.Add(this.right);
             this.Controls.Add(this.left);
@@ -180,7 +180,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
