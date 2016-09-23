@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-
+using System.Threading;
 
 namespace VRGame
 {
@@ -91,6 +91,8 @@ namespace VRGame
         private void kill_Click(object sender, EventArgs e)
         {
             load(currentPage);
+            SendKeys.Send("{ESC}");
+            Thread.Sleep(1000);
             currentProcess.Kill();
             currentProcess.Close();
             recordFinish(DateTime.Now);
@@ -154,7 +156,7 @@ namespace VRGame
                 }
             }
 
-            return i / 8;
+            return (i / 8) - 1;
         }
 
         private void recordStart(int gameid, DateTime time)
@@ -174,7 +176,7 @@ namespace VRGame
                     sw.WriteLine(Log.titleSerialize());
                 }
             }
-            
+
             using (StreamWriter sw = File.AppendText(filePath))
             {
                 sw.WriteLine(log.serialize());
